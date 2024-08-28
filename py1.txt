@@ -1,0 +1,132 @@
+#switch jaisa kuch
+a=int(input("Enter first number"))
+b=int(input("Enter second number"))
+print("Press 1 for Add")
+print("Press 2 for Sub")
+print("Press 3 for Mul")
+print("Press 4 for Div")
+ch=int(input())
+if ch==1:
+ c=a+b
+ print("sum=" ,c)
+elif ch==2:
+ c=a-b
+ print("sub=" ,c)
+elif ch==3:
+ c=a+b
+ print("mul=" ,c)
+elif ch==4:
+ c=a+b
+ print("div=" ,c)
+else:
+ print("Invalid choice") 
+......................................................................................................................................
+#loop
+import time
+i=1
+while i<=10:
+ print(i)
+ time.sleep(2)
+ i=i+1
+
+......................................................................................................................................
+#UDF
+def welcome():
+ print("Hello, i am a student of Python")
+welcome()
+welcome()
+welcome()
+welcome()
+welcome()
+welcome()
+
+
+#UDF
+def add():
+ a=10
+ b=12
+ c=a+b
+ print("sum =" ,c)
+add()
+
+#UDF
+def add(x,y):
+ return(x+y)
+sum(add(10,20))
+
+
+#UDF
+def add(x,y):
+ return(x+y)
+sum=add(10,20)
+print("Sum =" ,sum)
+
+____________________________________________________________________________________________________________________________________________________________________________________________
+										14 AUGUST 2024
+
+The variables which are declared within the class ,outside of all the methods are known as static variables(or)  class variables
+
+the data which is common for every object is recommended to represent by using static variables
+
+for all the static 
+
+#code
+class x:
+i=1000
+ def m1(self):
+  print(x.i)
+x1=x()
+x1.m1
+print(x.i)
+___________________________________________________________________________________________________________________________________________________________________________________________
+class Rectangle:
+ def __init__(self,l,b):
+  self.l=l
+  self.b=b
+ def rectArea(self):
+  return self.l*self.b
+ def rectPeri(self):
+  return 2*(self.l + self.b)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

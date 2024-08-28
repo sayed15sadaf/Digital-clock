@@ -1,0 +1,169 @@
+a=int(input("Enter first number "))
+b=int(input("Enter second number "))
+c=int(input("Enter third number "))
+if a<b and c<b:
+ print(c, "is greatest")
+elif b<a and b<c:
+ print(b, "is greatest")
+else:
+ print(c, "is greatest")
+
+
+#Bill calculation
+
+a=int(input("Enter total number of units :"))
+if a<=150:
+ bill=a*2.40
+ print("Your bill is" ,bill)
+elif a>150 and a<=300:
+ bill=(150*2.40)+(a-150)*3.00
+ print("Your bill is" ,bill)
+else:
+  bill=(150*2.40)+(150*3)+(a-300)*3.20
+  print("Your bill is" ,bill)
+
+
+
+#GROSS SALARY
+
+sal=int(input("Enter your salary: "))
+if sal>=4000:
+ HRA=(sal/100)*10
+ DA=(sal/100)*50
+ print("Your gross salary is: " ,HRA+DA+sal)
+elif sal>4000 and sal<=8000:
+ HRA=(sal/100)*15
+ DA=(sal/100)*60
+ print("Your gross salary is: " ,HRA+DA+sal)
+elif sal>8000 and sal<=12000:
+ HRA=(sal/100)*20
+ DA=(sal/100)*70
+ print("Your gross salary is: " ,HRA+DA+sal)
+else:
+ HRA=(sal/100)*25
+ DA=(sal/100)*80
+ print("Your gross salary is: " ,HRA+DA+sal)
+
+
+
+
+
+#1-10.........
+n=int(input("Enter number of times you want to print your name "))
+i=n
+while i>=1:
+ print(i)
+ i=i-1
+
+
+#10-1.......
+n=int(input("Enter number of times you want to print your name "))
+i=1
+while i<=n:
+ print(i)
+ i=i+1
+
+__________________________________________________________________________________________________________
+while:- While is a keyword . Which works as loop control.
+Initialization of loop counter
+while condition:
+ #code
+..............................................................................................................
+#Reverse counter
+
+c=10
+while c>0:
+	print(c)
+	c=c-1
+..............................................................................................................
+sleep().............Function
+time is a module
+
+#Reverse counter
+import time
+c=10
+while c>0:
+	print(c)
+	time.sleep(1)
+	c=c-1
+ 
+#Reverse counter
+#import time #Module
+from time import sleep
+c=10
+while c>0:
+	print(c)
+	sleep(1)
+	c=c-1
+..............................................................................................................
+
+#wap to find factorial of given number
+n=int(input("Enter a number :"))
+f=1
+while n>0:
+	f=f*n
+	n=n-1
+print("Factorial=" ,f)
+............................................................................................................
+#WAP to find sum of digits of a given number
+n=int(input("Enter a number :"))
+sum=0
+while n>0:
+	f=n%10
+	sum=sum+f
+	n=n//10
+print("SUM IS : " ,sum)
+..............................................................................................................
+for:-for is a keyword which works as a loop control.for loop in python is used to traverse elements of a collection.
+cname="SOFTPRO"
+for c in cname:
+	print("c")
+#
+cname="SOFTPRO"
+for c in cname:
+	print(c)
+#
+cname=input("Enter the word you want to print :")
+for c in cname:
+	print(c)
+..............................................................................................................
+range():-Range function in python is used to generate numbers in python
+
+range(5)-->0,1,2,3,4,5
+range(1,6)-->1,2,3,4,5
+range(1,10,2)-->1,3,5,7,9
+range(start,end,intrval)
+
+#wap to print numbers
+
+for i in range(5):
+	print(i)
+---------------------
+for i in range(1,11):
+	print(i)
+------------------------
+for i in range(2,21,2):
+	print(i)
+
+..............................................................................................................
+
+#WAP to print numbers in given range with given interval
+lw=int(input("Enter lower limit :"))
+ul=int(input("Enter upper limit :"))
+interval=int(input("Enter interval :"))
+for n in range(lw,ul+1,interval):
+	print(n)
+_____________________________________________________________________________________________________________
+wap to reverse the digits of given no
+wa to covert binary to decimal number
+wap to print table of given number in given format:2*1=2
+
+
+
+
+
+
+
+
+
+
